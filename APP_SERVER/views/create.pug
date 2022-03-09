@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1 you can now add more Books using this form.
+    form(action = '' method= 'post')
+        label(for='title') title:
+        br
+        input#title(type='text' name='title')
+        br
+        label(for='author') author:
+        br
+        input#author(type='text' name='author')
+        br
+        input(type="submit" value='submit')

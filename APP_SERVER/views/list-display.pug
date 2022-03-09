@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p  Here is a list of the most selling Books of the year 
+  ul 
+    each book in books
+     li 
+       h2
+        a(href= `/books/${book._id}`)= book.title 
+    p 
+      a(href= '/create') add new book 
